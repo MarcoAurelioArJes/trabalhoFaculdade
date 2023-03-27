@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatorios mensais</title>
+
+    <Style>
+        .gasto{ color: red; }
+        .receita{ color: blue; }
+        .cGasto{ color: white; background-color: red;}
+        .cReceita{ color: white; background-color: blue;}
+    </Style>
 </head>
 <body>
-        <Style>
-            .gasto{ color: red; }
-            .Receita{ color: blue; }
-            .CGasto{ color: white; background-color: red;}
-            .CReceita{ color: white; background-color: blue;}
-        </Style>
-
-
+        
         <h1>Manage Money</h1><br>
 
         <table border="3">
@@ -23,8 +23,8 @@
                 <!-- Colunas 01 -->
                 <tr align="center">
                     <th colspan="2">Período: 12/2022</th>
-                    <th colspan="2">Saldo anterior: <font color="blue"> R$ xx </font></th>
-                    <th colspan="3">Carteira: <font color="blue">  R$ xx </font></th>
+                    <th colspan="2">Saldo anterior: <span class="receita"> R$ xx </span> </th>
+                    <th colspan="3">Carteira: <span class="receita"> R$ xx </span> </th>
                 </tr>
                 <!-- Colunas 02 -->
                 <tr align="center">
@@ -54,9 +54,9 @@
                     <td> Salário mensal </td>
                     <td> Remuneração </td>
                     <td> Salário mensal </td>
-                    <td class="Receita"> Receita </td>
-                    <td class="Receita"> Entrada conta corrente </td>
-                    <td class="Receita"> 5000,00</td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 5000,00</td>
                 </tr>
                 <tr>
                     <td> 05/12/2022 </td>
@@ -180,18 +180,18 @@
                     <td> 2ª Parcela décimo terceiro</td>
                     <td> Remuneração </td>
                     <td> Salário Mensal </td>
-                    <td class="Receita"> Receita </td>
-                    <td class="Receita"> Entrada conta corrente </td>
-                    <td class="Receita"> 1625,00</td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 1625,00</td>
                 </tr>
                 <tr>
                     <td> 17/12/2022 </td>
                     <td> Freelancer </td>
                     <td> Remuneração </td>
                     <td> Renda Extra </td>
-                    <td class="Receita"> Receita </td>
-                    <td class="Receita"> Entrada conta corrente </td>
-                    <td class="Receita"> 1200,00</td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 1200,00</td>
                 </tr>
                 <tr>
                     <td> 20/12/2022 </td>
@@ -252,18 +252,18 @@
                 <tr> <td colspan="7" bgcolor="Black"></td> </tr>
                 <tr>
                     <td colspan="4"> </td>
-                    <td colspan="2" class="CReceita"> Total Receita </td>
-                    <td class="CReceita"> 7825,00</td>
+                    <td colspan="2" class="cReceita"> Total Receita </td>
+                    <td class="cReceita"> 7825,00</td>
                 </tr>
                 <tr >
                     <td colspan="4"> </td>
-                    <td colspan="2" class="CGasto"> Total Despesas </td>
-                    <td class="CGasto"> 7008,00</td>
+                    <td colspan="2" class="cGasto"> Total Despesas </td>
+                    <td class="cGasto"> 7008,00</td>
                 </tr>
                 <tr>
                     <td colspan="4"> </td>
                     <td colspan="2"> Saldo mês </td>
-                    <td class="Receita"> 817,00 </td>
+                    <td class="receita"> 817,00 </td>
                 </tr>
                 <tr> <td colspan="7" bgcolor="Black"></td> </tr>
             </tbody>
