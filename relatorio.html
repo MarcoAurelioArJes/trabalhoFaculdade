@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorios mensais</title>
+
+    <Style>
+        .gasto{ color: red; }
+        .receita{ color: blue; }
+        .cGasto{ color: white; background-color: red;}
+        .cReceita{ color: white; background-color: blue;}
+    </Style>
+</head>
+<body>
+        
+        <h1>Manage Money</h1><br>
+
+        <table border="3">
+
+            <thead>
+                <!-- Colunas 01 -->
+                <tr align="center">
+                    <th colspan="2">Período: 12/2022</th>
+                    <th colspan="2">Saldo anterior: <span class="receita"> R$ xx </span> </th>
+                    <th colspan="3">Carteira: <span class="receita"> R$ xx </span> </th>
+                </tr>
+                <!-- Colunas 02 -->
+                <tr align="center">
+                    <th> DATA </th>
+                    <th> DESCRIÇÃO</th>
+                    <th> CATEGORIA </th>
+                    <th> SUBCATEGORIA</th>
+                    <th> TIPO </th>
+                    <th> FORMA PGTO </th>
+                    <th> VALOR R$</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Conteúdos -->
+                <tr>
+                    <td> 01/12/2022 </td>
+                    <td> Compra de medicamnetos </td>
+                    <td> Saúde </td>
+                    <td> Farmácia </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 20,00 </td>
+                </tr>
+                <tr>
+                    <td> 05/12/2022 </td>
+                    <td> Salário mensal </td>
+                    <td> Remuneração </td>
+                    <td> Salário mensal </td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 5000,00</td>
+                </tr>
+                <tr>
+                    <td> 05/12/2022 </td>
+                    <td> Unialfa - Mensalidade</td>
+                    <td> Educação </td>
+                    <td> Faculdade </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 650,00 </td>
+                </tr>
+                <tr>
+                    <td> 05/12/2022 </td>
+                    <td> Open English </td>
+                    <td> Educação </td>
+                    <td> Curso </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto">150,00 </td>
+                </tr>
+                <tr>
+                    <td> 06/12/2022 </td>
+                    <td> Compra de alimentos para casa </td>
+                    <td> Alimentação </td>
+                    <td> Mercado </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 590,00 </td>
+                </tr>
+                <tr>
+                    <td> 06/12/2022 </td>
+                    <td> Prestação Imóvel </td>
+                    <td> Habitação </td>
+                    <td> Financiamento </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 1450,00 </td>
+                </tr>
+                <tr>
+                    <td> 07/12/2022 </td>
+                    <td> Restaurante </td>
+                    <td> Alimentação </td>
+                    <td> Restaurante </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 170,00 </td>
+                </tr>
+                <tr>
+                    <td> 07/12/2022 </td>
+                    <td> Prestação carro 24/48 </td>
+                    <td> Transporte </td>
+                    <td> Financiamento </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 1100,00</td>
+                </tr>
+                <tr>
+                    <td> 08/12/2022 </td>
+                    <td> Enel </td>
+                    <td> Habitação </td>
+                    <td> Energia Elétrica</td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 231,00 </td>
+                </tr>
+                <tr>
+                    <td> 08/12/2022 </td>
+                    <td> Saneago </td>
+                    <td> Habitação </td>
+                    <td> Água e Esgoto </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 105,00 </td>
+                </tr>
+                <tr>
+                    <td> 08/12/2022 </td>
+                    <td> Seguro automével </td>
+                    <td> Transporte </td>
+                    <td> Seguro </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 300,00 </td>
+                </tr>
+                <tr>
+                    <td> 10/12/2022 </td>
+                    <td> Internet </td>
+                    <td> Habitação </td>
+                    <td> Internet </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 150,00 </td>
+                </tr>
+                <tr>
+                    <td> 10/12/2022 </td>
+                    <td> Unimed </td>
+                    <td> Saúde </td>
+                    <td> Plano de Saúde </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 480,00 </td>
+                </tr>
+                <tr>
+                    <td> 10/12/2022 </td>
+                    <td> SmartFit </td>
+                    <td> Saúde </td>
+                    <td> Academia </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 99,00 </td>
+                </tr>
+                <tr>
+                    <td> 12/12/2022 </td>
+                    <td> Combustível </td>
+                    <td> Transporte </td>
+                    <td> Combustível </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 120,00</td>
+                </tr>
+                <tr>
+                    <td> 15/12/2022 </td>
+                    <td> 2ª Parcela décimo terceiro</td>
+                    <td> Remuneração </td>
+                    <td> Salário Mensal </td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 1625,00</td>
+                </tr>
+                <tr>
+                    <td> 17/12/2022 </td>
+                    <td> Freelancer </td>
+                    <td> Remuneração </td>
+                    <td> Renda Extra </td>
+                    <td class="receita"> Receita </td>
+                    <td class="receita"> Entrada conta corrente </td>
+                    <td class="receita"> 1200,00</td>
+                </tr>
+                <tr>
+                    <td> 20/12/2022 </td>
+                    <td> Compra de presentes para o natal </td>
+                    <td> Diversos </td>
+                    <td> Compras </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 500,00 </td>
+                </tr>
+                <tr>
+                    <td> 22/12/2022 </td>
+                    <td> Fulana de Tal </td>
+                    <td> Habitação </td>
+                    <td> Diarista </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 100,00 </td>
+                </tr>
+                <tr>
+                    <td> 23/12/2022 </td>
+                    <td> Compra de alimentos para ceia </td>
+                    <td> Alimentação </td>
+                    <td> Mercado </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 349,00 </td>
+                </tr>
+                
+                <tr>
+                    <td> 27/12/2022 </td>
+                    <td> Lanche </td>
+                    <td> Alimentação </td>
+                    <td> FastFood </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 65,00 </td>
+                </tr>
+                <tr>
+                    <td> 28/12/2022 </td>
+                    <td> Compra alimentos e bebidas para o ano novo</td>
+                    <td> Alimentação </td>
+                    <td> Mercado </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 149,00 </td>
+                </tr>
+                <tr>
+                    <td> 30/12/2022 </td>
+                    <td> Combustível </td>
+                    <td> Transporte </td>
+                    <td> Combustível </td>
+                    <td class="gasto"> Gasto </td>
+                    <td class="gasto"> Débito </td>
+                    <td class="gasto"> 230,00</td>
+                </tr>
+                <!-- Cálculos -->
+                <tr> <td colspan="7" bgcolor="Black"></td> </tr>
+                <tr>
+                    <td colspan="4"> </td>
+                    <td colspan="2" class="cReceita"> Total Receita </td>
+                    <td class="cReceita"> 7825,00</td>
+                </tr>
+                <tr >
+                    <td colspan="4"> </td>
+                    <td colspan="2" class="cGasto"> Total Despesas </td>
+                    <td class="cGasto"> 7008,00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"> </td>
+                    <td colspan="2"> Saldo mês </td>
+                    <td class="receita"> 817,00 </td>
+                </tr>
+                <tr> <td colspan="7" bgcolor="Black"></td> </tr>
+            </tbody>
+
+            <tfoot>                
+                <td colspan="7" align="center"> Relatório gerado via Manage Money em 26/03/2022 às 20:38</td>
+            </tfoot>
+
+        </table>
+
+</body>
+</html>
