@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #4bb550;
+}
+
+#cabecalhoNav > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 160px;
+}
+
+.linksCabecalho {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.links {
+    text-decoration: none;
+}

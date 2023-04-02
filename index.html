@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Manage Money</title>
 </head>
 <body>
     
-    <header>
-        <h1>Manage Money</h1>
+    <header class="cabecalho">
+        <div id="cabecalhoLogo">
+            <h1>Manage Money</h1>
+        </div>
+
+        <div id="cabecalhoNav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="linksCabecalho">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="linksCabecalho">
+                            Sobre
+                        </a>
+                    </li>
+                    <li  class="linksCabecalho">
+                        <a>
+                            Contato
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <div>
@@ -20,7 +44,7 @@
             </p>
     </div>
     
-    <section>
+    <section id="home">
         <h3>
             Crie sua Conta
         </h3>
@@ -160,7 +184,7 @@
 
     <h3 class="text"> Obrigado pelo contato!</h3>
     <p class="paragrafo">Em breve entrarei em contato;</p>
-    <a href="index.html" class="btn"> Home</a>
+    <a href="#home" class="links">Home</a>
     <footer class="Redes">
         <ul>
 
