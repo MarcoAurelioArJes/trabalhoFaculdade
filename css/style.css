@@ -26,3 +26,40 @@ body {
 .links {
     text-decoration: none;
 }
+
+/* Parte da Camilla */
+
+section {
+    padding: 10px;
+    color: #504f5a;
+}
+
+.sobreNos {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #4bb550;
+    color: white;
+
+}
+
+.destaqueTextoVerde {
+    color: #4bb550;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 10px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+/* Parte da Camilla */
