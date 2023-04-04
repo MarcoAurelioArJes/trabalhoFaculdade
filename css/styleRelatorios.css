@@ -1,0 +1,19 @@
+.relatorios {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.relatorioTitle {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #4bb550;
+    color: white;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+}
