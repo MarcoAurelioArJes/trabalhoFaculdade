@@ -38,78 +38,100 @@
         </div>
     </header>
     
-    <div>
-           <p>
-                Abaixo você pode se cadastrar caso não tenha uma conta criada, ou somente entrar
-                se já possui conta no Manage Money.
-            </p>
-    </div>
     
-    <section id="home">
-        <h3>
-            Crie sua Conta
-        </h3>
-        <div>
-            <label for="inputNome">
-                Nome
-            </label>
-            <input type="text" id="inputNome">
-        </div>
-        <div>
-            <label for="inputCpf">
-                CPF
-            </label>
-            <input type="text" maxlength="11" id="inputCpf">
-        </div>
-        <div>
-            <label for="inputDataNascimento">
-                Data Nascimento
-            </label>
-            <input type="date" id="inputDataNascimento">
-        </div>
-        <div>
-            <label for="inputEmail">
-                Email
-            </label>
-            <input type="text" id="inputEmail">
-        </div>
-        <div>
-            <label for="inputSenha">
-                Senha
-            </label>
-            <input type="password" id="inputSenha">
-            <label for="inputConfirmaSenha">
-                Confirmar Senha
-            </label>
-            <input type="password" id="inputConfirmaSenha">
-        </div>
-        <button>
-            Cadastrar
-        </button>
-    </section>
-    
-    <section>
-        <h3>
-            Fazer Login
-        </h3>
-        <div>
-            <label for="inputEmailEntrar">
-                Email
-            </label>
-            <input type="text" id="inputEmailEntrar">
-        </div>
-        <div>
-            <label for="inputSenhaEntrar">
-                Senha
-            </label>
-            <input type="password" id="inputSenhaEntrar">
-        </div>
-        <button>
-            Entrar
-        </button>
+    <section id="sign">
+
+        <section class="cards">
+
+            <!-- Cabecalho Cadastro -->
+            <div class="cabecalhoCard">
+                <img src="imgs/cadastro_icon.png" class="iconSign" alt="">
+                <h2>
+                    Crie sua Conta
+                </h2>
+            </div>
+
+            <!-- Campos Cadastro -->
+            <div class="campoSign">
+                <label for="inputNome"> Nome </label>
+                <input type="text" id="inputNome">
+            </div>
+            <div class="campoSign">
+                <label for="inputCpf"> CPF </label>
+                <input type="text" maxlength="11" id="inputCpf">
+            </div>
+            <div class="campoSign">
+                <label for="inputDataNascimento"> Data Nascimento </label>
+                <input type="date" id="inputDataNascimento">
+            </div>
+            <div class="campoSign">
+                <label for="inputEmail"> Email </label>
+                <input type="text" id="inputEmail">
+            </div>
+            <div class="campoSign">
+                <label for="inputSenha"> Senha </label>
+                <input type="password" id="inputSenha">
+            </div>
+            <div class="campoSign">
+                <label for="inputConfirmaSenha"> Confirmar Senha </label>
+                <input type="password" id="inputConfirmaSenha">
+             </div>   
+             <div class="divButton">
+                <button class="signButton"> Cadastrar </button>
+            </div>
+
+        </section>
+        
+        <section class="cards">
+
+            <!-- Cabecalho Login -->
+            <div class="cabecalhoCard">
+                <img src="imgs/login_icon.png" class="iconSign" alt="">
+                <div id="textoCabecalhoLogin">
+                    <h2>Bem-vindo!</h2>
+                    <p> Faça Login em sua conta</p>
+                </div>
+            </div>
+
+            <!-- Campos Login -->
+            <div class="campoSign">
+                <label for="inputEmailEntrar"> Email </label>
+                <input type="text" id="inputEmailEntrar">
+            </div>
+            <div class="campoSign">
+                <label for="inputSenhaEntrar"> Senha </label>
+                <input type="password" id="inputSenhaEntrar">
+            </div>
+            <div id="loginSettings">
+                <div>
+                    <input type="checkbox" id="inputLembrarSenha">
+                    <label for="inputLembrarSenha"> Lembrar senha? </label>
+                </div>
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            </div>
+            <div class="divButton">
+                <button class="signButton"> Entrar </button>
+            </div>
+            <div class="loginOptions">
+                <p>Se preferir, entre com uma rede social: </p>
+                <div id="redesLogin">
+                    <a href=""> 
+                        <img src="imgs/google_icon.png" class="loginOptionsIcon" alt="Google">
+                    </a>
+                    <a href="">  
+                        <img src="imgs/facebook_icon.png" class="loginOptionsIcon" alt="facebook">
+                    </a>
+                    <a href="">  
+                        <img src="imgs/twitter_icon.png" class="loginOptionsIcon" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
     </section>
 
-    <section>
+    <section id="sobre">
         <h2 class="sobreNos">
             <i class="arrow right"></i> SOBRE NÓS
         </h2>
