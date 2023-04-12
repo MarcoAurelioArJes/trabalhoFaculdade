@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <title>Manage Money</title>
 </head>
 <body>
@@ -58,13 +58,14 @@
             </div>
 
             <!-- Campos Cadastro -->
+            <form id="SignupForm">
             <div class="campoSign">
                 <label for="inputNome"> Nome </label>
-                <input type="text" id="inputNome">
+                <input type="text" id="inputNome" placeholder="Nome completo">
             </div>
             <div class="campoSign">
                 <label for="inputCpf"> CPF </label>
-                <input type="text" maxlength="11" id="inputCpf">
+                <input type="text" maxlength="11" id="inputCpf" placeholder="000.000.000-00">
             </div>
             <div class="campoSign">
                 <label for="inputDataNascimento"> Data Nascimento </label>
@@ -72,7 +73,7 @@
             </div>
             <div class="campoSign">
                 <label for="inputEmail"> Email </label>
-                <input type="text" id="inputEmail">
+                <input type="text" id="inputEmail" placeholder="exemplo@email.com" >
             </div>
             <div class="campoSign">
                 <label for="inputSenha"> Senha </label>
@@ -83,8 +84,10 @@
                 <input type="password" id="inputConfirmaSenha">
              </div>   
              <div class="divButton">
-                <button class="signButton" onclick="criarConta()"> Cadastrar </button>
+                <button class="signButton" id="signupButton" onclick="criarConta()"> Cadastrar </button>
             </div>
+        </form>
+        <p class="erro"></p>
 
         </section>
         
@@ -99,40 +102,42 @@
                 </div>
             </div>
 
+            <Form id="loginForm">
             <!-- Campos Login -->
-            <div class="campoSign">
-                <label for="inputEmailEntrar"> Email </label>
-                <input type="text" id="inputEmailEntrar">
-            </div>
-            <div class="campoSign">
-                <label for="inputSenhaEntrar"> Senha </label>
-                <input type="password" id="inputSenhaEntrar">
-            </div>
-            <div id="loginSettings">
-                <div>
-                    <input type="checkbox" id="inputLembrarSenha">
-                    <label for="inputLembrarSenha"> Lembrar senha? </label>
+                <div class="campoSign">
+                    <label for="inputEmailEntrar"> Email </label>
+                    <input type="text" id="inputEmailEntrar" placeholder="exemplo@email.com">
                 </div>
-                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-            </div>
-            <div class="divButton">
-                <button class="signButton"> Entrar </button>
-            </div>
-            <div class="loginOptions">
-                <p>Se preferir, entre com uma rede social: </p>
-                <div id="redesLogin">
-                    <a href=""> 
-                        <img src="imgs/google_icon.png" class="loginOptionsIcon" alt="Google">
-                    </a>
-                    <a href="">  
-                        <img src="imgs/facebook_icon.png" class="loginOptionsIcon" alt="facebook">
-                    </a>
-                    <a href="">  
-                        <img src="imgs/twitter_icon.png" class="loginOptionsIcon" alt="facebook">
-                    </a>
+                <div class="campoSign">
+                    <label for="inputSenhaEntrar"> Senha </label>
+                    <input type="password" id="inputSenhaEntrar">
                 </div>
-            </div>
-            
+                <div id="loginSettings">
+                    <div>
+                        <input type="checkbox" id="inputLembrarSenha">
+                        <label for="inputLembrarSenha"> Lembrar senha? </label>
+                    </div>
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                </div>
+                <div class="divButton">
+                    <button class="signButton" id="LoginButton" onclick="alertaLogin()"> Entrar </button>
+                </div>
+                <div class="loginOptions">
+                    <p>Se preferir, entre com uma rede social: </p>
+                    <div id="redesLogin">
+                        <a href=""> 
+                            <img src="imgs/google_icon.png" class="loginOptionsIcon" alt="Google">
+                        </a>
+                        <a href="">  
+                            <img src="imgs/facebook_icon.png" class="loginOptionsIcon" alt="facebook">
+                        </a>
+                        <a href="">  
+                            <img src="imgs/twitter_icon.png" class="loginOptionsIcon" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </Form>
+        
         </section>
 
     </section>
@@ -210,6 +215,7 @@
                     required></textarea>
             </div>
             <button type="submit" onclick="EnviarEmail()">Enviar</button>
+
             <input type="hidden" name="accessKey" value="9993bb59-06fa-4863-a472-48e0fcabc999">
             <input type="hidden" name="redirectTo" value="URL/ip da máquina">
         </form>

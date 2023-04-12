@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Manage Money</title>
+</head>
+<body>
+
+    
+    <header class="cabecalho">
+        <div id="cabecalhoLogo">
+            <h1>Manage Money</h1>
+        </div>
+
+        <div id="cabecalhoNav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="linksCabecalho">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="linksCabecalho">
+                            Sobre
+                        </a>
+                    </li>
+                    <li  class="linksCabecalho">
+                        <a>
+                            Contato
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <section id="sign">
+
+        <section class="cards">
+
+            <!-- Cabecalho Cadastro -->
+            <div class="cabecalhoCard">
+                <img src="imgs/cadastro_icon.png" class="iconSign" alt="">
+                <h2>
+                    Crie sua Conta
+                </h2>
+            </div>
+
+            <!-- Campos Cadastro -->
+            <div class="campoSign">
+                <label for="inputNome"> Nome </label>
+                <input type="text" id="inputNome">
+            </div>
+            <div class="campoSign">
+                <label for="inputCpf"> CPF </label>
+                <input type="text" maxlength="11" id="inputCpf">
+            </div>
+            <div class="campoSign">
+                <label for="inputDataNascimento"> Data Nascimento </label>
+                <input type="date" id="inputDataNascimento">
+            </div>
+            <div class="campoSign">
+                <label for="inputEmail"> Email </label>
+                <input type="text" id="inputEmail">
+            </div>
+            <div class="campoSign">
+                <label for="inputSenha"> Senha </label>
+                <input type="password" id="inputSenha">
+            </div>
+            <div class="campoSign">
+                <label for="inputConfirmaSenha"> Confirmar Senha </label>
+                <input type="password" id="inputConfirmaSenha">
+             </div>   
+             <div class="divButton">
+                <button class="signButton"> Cadastrar </button>
+            </div>
+
+        </section>
+        
+        <section class="cards">
+
+            <!-- Cabecalho Login -->
+            <div class="cabecalhoCard">
+                <img src="imgs/login_icon.png" class="iconSign" alt="">
+                <div id="textoCabecalhoLogin">
+                    <h2>Bem-vindo!</h2>
+                    <p> Faça Login em sua conta</p>
+                </div>
+            </div>
+
+            <!-- Campos Login -->
+            <div class="campoSign">
+                <label for="inputEmailEntrar"> Email </label>
+                <input type="text" id="inputEmailEntrar">
+            </div>
+            <div class="campoSign">
+                <label for="inputSenhaEntrar"> Senha </label>
+                <input type="password" id="inputSenhaEntrar">
+            </div>
+            <div id="loginSettings">
+                <div>
+                    <input type="checkbox" id="inputLembrarSenha">
+                    <label for="inputLembrarSenha"> Lembrar senha? </label>
+                </div>
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            </div>
+            <div class="divButton">
+                <button class="signButton"> Entrar </button>
+            </div>
+            <div class="loginOptions">
+                <p>Se preferir, entre com uma rede social: </p>
+                <div id="redesLogin">
+                    <a href=""> 
+                        <img src="imgs/google_icon.png" class="loginOptionsIcon" alt="Google">
+                    </a>
+                    <a href="">  
+                        <img src="imgs/facebook_icon.png" class="loginOptionsIcon" alt="facebook">
+                    </a>
+                    <a href="">  
+                        <img src="imgs/twitter_icon.png" class="loginOptionsIcon" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+    </section>
+
+    <section id="sobre">
+        <h2 class="sobreNos">
+            <i class="arrow right"></i> SOBRE NÓS
+        </h2>
+            <h3>
+                Procurando um aplicativo para controlar suas finanças?
+            </h3>
+            <p>
+                Conheça o <span class="destaqueTextoVerde">Manage Money</span>, uma solução simples, funcional e intuitiva que lhe permitirá gerenciar suas despesas e receitas. 
+            </p>
+
+            <div>
+                <ul>
+                        <li>
+                            <b>Organize suas despesas por categoria</b>
+                            <p>
+                                Realize os lançamentos por categoria. Além das categorias existentes é possível personalizar e criar novas categorias.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Identifique seus padrões de gastos</b>
+                            <p>
+                                Identificar seus padrões de gastos é o primeiro passo para conquistar uma financeira mais saudável e equilibrada.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Receba notificação antes do vencimento</b>
+                            <p>
+                                Nunca mais pague multa e juros por atrasos! 
+                            </p>
+                            <p>
+                                Ao lançar uma despesa você poderá escolher se deseja adicionar um lembrete, recebendo uma notificação via e-mail na data anterior ao vencimento. 
+                            </p>
+                        </li>
+                        <li>
+                            <b>Defina metas</b>
+                            <p>
+                                Podemos te ajudar a reduzir despesas e a poupar dinheiro.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Compartilhe com outros usuários</b>
+                            <p>
+                                Na versão paga você pode criar um grupo familiar e definir quais informações deseja compartilhar com outros usuários. 
+                            </p>
+                        </li>
+                </ul>                    
+                <p>
+                    Com o <span class="destaqueTextoVerde">Manage Money</span> você acompanha sua evolução financeira através de gráficos. 
+                </p>
+                <p>
+                    Também é possível exportar os lançamentos para Excel e PDF.
+                </p>
+            </div>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <form action="http://api.staticforms.xyz/submit" method="POST">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"
+            required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Informe seu e-mail"
+            autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite a sua mensagem"
+                required></textarea>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="accessKey" value="9993bb59-06fa-4863-a472-48e0fcabc999">
+            <input type="hidden" name="redirectTo" value="URL/ip da máquina">
+        </form>
+    </section>
+
+    <h3 class="text"> Obrigado pelo contato!</h3>
+    <p class="paragrafo">Em breve entrarei em contato;</p>
+    <a href="#home" class="links">Home</a>
+    <footer class="Redes">
+        <ul>
+
+            <li>
+                <a href="#" target="blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2175/2175198.png" width="50" height="50" alt="instagram">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60574.png" width="50" height="50" alt="pinterest">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="blank">
+                    <img src="https://paraiba.pb.gov.br/diretas/secretaria-da-mulher-e-da-diversidade-humana/imagens/youtube.png/@@images/d756f596-02fc-4fa9-aa71-6befa8ce1298.png" width="50" height="50" alt="youtube">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/61/61045.png" width="50" height="50" alt="facebook">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60580.png" width="50" height="50" alt="twiter">
+                </a>
+            </li>
+
+
+        </ul>
+    </footer>
+</body>
+</html>

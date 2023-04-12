@@ -190,9 +190,10 @@ body, h2, p {
     margin-top: 10px;
     border:none;
     border-bottom: 1px solid lightgray;
+    outline: none;
 }
 
-#inputDataNascimento{
+.campoSign ::placeholder , #inputDataNascimento{
     color: #d6dee2;
 }
 
