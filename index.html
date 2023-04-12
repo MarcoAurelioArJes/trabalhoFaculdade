@@ -34,6 +34,11 @@
                             Contato
                         </a>    
                     </li>
+                    <li>
+                        <a href="./relatorio.html" class="linksCabecalho">
+                            Relatorios
+                        </a>    
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -193,16 +198,18 @@
     <section id="contato" class="sessaoContato">
         <h2>Contato</h2>
         <form class="formularioContato">
-            <label class="labelContato">Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"
-            required>
-            <label class="labelContato">Email</label>
-            <input type="email" name="email" placeholder="Informe seu e-mail"
-            autocomplete="off" required>
-            <label class="labelContato">Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite a sua mensagem"
-                required></textarea>
-            <button type="submit">Enviar</button>
+            <div style="display: none;">
+                <label class="labelContato">Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"
+                required>
+                <label class="labelContato">Email</label>
+                <input type="email" name="email" placeholder="Informe seu e-mail"
+                autocomplete="off" required>
+                <label class="labelContato">Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite a sua mensagem"
+                    required></textarea>
+            </div>
+            <button type="submit" onclick="EnviarEmail()">Enviar</button>
             <input type="hidden" name="accessKey" value="9993bb59-06fa-4863-a472-48e0fcabc999">
             <input type="hidden" name="redirectTo" value="URL/ip da máquina">
         </form>
