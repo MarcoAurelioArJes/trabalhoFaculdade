@@ -19,7 +19,6 @@ function EnviarEmail(){
     }   
 }
 
-// Alert Login
 function alertaLogin(e) 
 {
     let email = document.getElementById('inputEmailEntrar');
