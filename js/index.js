@@ -1,7 +1,31 @@
+/**
+ * Camilla JS
+ */
+
 function criarConta() {
     alert("Conta criada com sucesso!")
 }
 
+function tipoMeta() {
+    var tipoMeta = document.getElementById('tipoMetas').value;
+    if(tipoMeta == 'despesasGerais') {
+        document.getElementById("campoCategoria").style.display = 'none';
+    } else {
+        document.getElementById("campoCategoria").style.display = 'block';
+    }
+}
+
+function enviarFormulario(event) {
+    // Prevenir o comportamento padrão do navegador
+    event.preventDefault();
+    alert('Meta cadastrada com sucesso!')
+    
+    return false;
+  }
+
+/**
+ * Fim Camilla JS
+ */
 function EnviarEmail(){
     let nome = prompt("Informe seu nome")
     let email = prompt(`Agora ${nome}, nos informe seu e-mail`)
