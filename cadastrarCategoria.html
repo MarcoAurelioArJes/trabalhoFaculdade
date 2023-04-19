@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categoria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estiloCadastroCategoria.css">
+</head>
+
+<body>
+    <header id="home" class="cabecalho">
+        <div id="cabecalhoLogo">
+            <h1>Manage Money</h1>
+        </div>
+
+        <div id="cabecalhoNav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="linksCabecalho">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="linksCabecalho">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="linksCabecalho">
+                            Contato
+                        </a>    
+                    </li>
+                    <li>
+                        <select class="menuSelecao" onchange="location = this.value;">
+                            <option value="./index.html" selected>
+                                Inicio
+                            </option>
+                            <option value="./relatorio.html">
+                                Relatorios
+                            </option>
+                            <option value="./cadastroLancamento.html">
+                                Cadastrar Lançamentos
+                            </option>
+                            <option value="./listaDeLancamentos.html">
+                                Lista de Lançamentos
+                            </option>
+                            <option value="./cadastrarMetas.html">
+                                Cadastrar Metas
+                            </option>
+                            <option value="./cadastrarCategoria.html">
+                                Cadastrar Categoria
+                            </option>
+                            <option value="./cadastrarFornecedores.html">
+                                Cadastrar Fornecedores
+                            </option>
+                          </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="formulario">
+            <form class="conteudoCategoria">
+                <h2>Cadastro Categoria</h1>
+
+                <label id="labelCategoria" for="Categoria">Categoria:</label>
+                <input type="text" id="Categoria" name="Categoria" required>
+        
+                <input type="submit" value="Cadastrar" id="botaoSalvar">
+            </form>
+    
+            <form class="conteudoSubCategoria">
+                <h2>Cadastrar Subcategoria </h2>
+    
+                <label id="Categoria pai" for="Categoria">Categoria:</label>
+                <input type="text" id="Categoria" name="Categoria" required>
+        
+                <label id="Subcategoria" for="Subcategoria">Subcategoria:</label>
+                <input type="text" id="Subcategoria" name="Subcategoria" required>
+        
+                <input type="submit" value="Cadastrar" id="botaoSalvar">
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./select.js"></script>
+</html>

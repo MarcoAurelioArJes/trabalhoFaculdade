@@ -1,22 +1,26 @@
-/* Estilo para o rótulo dos campos */
+.titulo {
+    text-align: center;
+    text-align: center;
+    margin: 10px 0 30px 0;
+    opacity: 0.9;
+    color: #0CA64E;
+}
+
 label {
     display: block;
     margin-bottom: 10px;
 
 }
 
-/* Estilo para o campo obrigatório */
 input[required],
-select, select[required] {
+select[required] {
     border: 1px solid #3CB371;
 }
 
-/* Estilo para o campo de entrada de data */
 input[type="date"] {
     border: 1px solid #3CB371;
 }
 
-/* Estilo para a opção selecionada no menu suspenso */
 select option:checked {
     background-color: #3CB371;
     color: #fff;
@@ -26,7 +30,6 @@ input {
     outline: none;
 }
 
-/* Estilo para o botão de envio */
 input[type="submit"] {
     background-color: #3CB371;
     color: #fff;
@@ -36,7 +39,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Estilo para o formulário */
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -46,18 +48,14 @@ form {
     box-shadow: 0px 0px 10px 0px #888;
 }
 
-/* Estilo para o campo de entrada de texto */
-input[type="text"], input[type="number"], textarea {
+input[type="text"] {
     border: 1px solid #3CB371;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilo para a opção de checkbox */
 input[type="checkbox"] {
     margin-right: 10px;
 }

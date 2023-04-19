@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Unialfa</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="home" class="cabecalho">
+        <div id="cabecalhoLogo">
+            <h1>Manage Money</h1>
+        </div>
+
+        <div id="cabecalhoNav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="linksCabecalho">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="linksCabecalho">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="linksCabecalho">
+                            Contato
+                        </a>    
+                    </li>
+                    <li>
+                        <select class="menuSelecao" onchange="location = this.value;">
+                            <option value="./index.html" selected>
+                                Inicio
+                            </option>
+                            <option value="./relatorio.html">
+                                Relatorios
+                            </option>
+                            <option value="./cadastroLancamento.html">
+                                Cadastrar Lançamentos
+                            </option>
+                            <option value="./listaDeLancamentos.html">
+                                Lista de Lançamentos
+                            </option>
+                            <option value="./cadastrarMetas.html">
+                                Cadastrar Metas
+                            </option>
+                            <option value="./cadastrarCategoria.html">
+                                Cadastrar Categoria
+                            </option>
+                            <option value="./cadastrarFornecedores.html">
+                                Cadastrar Fornecedores
+                            </option>
+                          </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="conteudoPrincipalListagem">
+            <h2 class="titulo">Lista de Lançamentos</h2>
+            <ul class="listaDeLancamentos">
+                <li class="itemListaDeLancamentos">
+                    <div>
+                        <p>
+                            Valor: R$ 100,00
+                        </p>
+                        <p>
+                            Data: 18/04/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                <li class="itemListaDeLancamentos">
+                    <div>
+                        <p>
+                            Valor: R$ 2.800,00
+                        </p>
+                        <p>
+                            Data: 25/04/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 2.600,00
+                        </p>
+                        <p>
+                            Data: 28/04/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+
+                <li class="itemListaDeLancamentos">
+                    <div>
+                        <p>
+                            Valor: R$ 453,22
+                        </p>
+                        <p>
+                            Data: 25/04/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 256,69
+                        </p>
+                        <p>
+                            Data: 30/04/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 25,00
+                        </p>
+                        <p>
+                            Data: 02/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 657,66
+                        </p>
+                        <p>
+                            Data: 16/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.020,00
+                        </p>
+                        <p>
+                            Data: 18/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 2.800,00
+                        </p>
+                        <p>
+                            Data: 25/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 789,78,00
+                        </p>
+                        <p>
+                            Data: 26/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.200,00
+                        </p>
+                        <p>
+                            Data: 30/05/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 200,00
+                        </p>
+                        <p>
+                            Data: 02/06/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 800,00
+                        </p>
+                        <p>
+                            Data: 15/06/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.020,00
+                        </p>
+                        <p>
+                            Data: 18/06/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.800,00
+                        </p>
+                        <p>
+                            Data: 25/06/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 3.000,00
+                        </p>
+                        <p>
+                            Data: 07/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.000,00
+                        </p>
+                        <p>
+                            Data: 13/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 25,00
+                        </p>
+                        <p>
+                            Data: 25/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 3.000,00
+                        </p>
+                        <p>
+                            Data: 25/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 1.500,00
+                        </p>
+                        <p>
+                            Data: 22/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 150,00
+                        </p>
+                        <p>
+                            Data: 28/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 850,00
+                        </p>
+                        <p>
+                            Data: 30/07/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 3.000,00
+                        </p>
+                        <p>
+                            Data: 07/08/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Receita
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+                <li class="itemListaDeLancamentos">
+
+                    <div>
+                        <p>
+                            Valor: R$ 600,00
+                        </p>
+                        <p>
+                            Data: 10/08/2023
+                        </p>
+                        <p>
+                            Tipo de lançamento: Despesa
+                        </p>
+                    </div>
+                    <div class="containerDeBotoes">
+                        <a href="#" class="botao btnVisualizar">
+                            Visualizar
+                        </a>
+                        <a href="#" class="botao btnEditar">
+                            Editar
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script src="./select.js"></script>
+</html>

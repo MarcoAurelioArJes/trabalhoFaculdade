@@ -35,14 +35,29 @@
                         </a>    
                     </li>
                     <li>
-                        <a href="./relatorio.html" class="linksCabecalho">
-                            Relatorios
-                        </a>    
-                    </li>
-                    <li>
-                        <a href="./metas.html" class="linksCabecalho">
-                            Metas
-                        </a>    
+                        <select class="menuSelecao" onchange="location = this.value;">
+                            <option value="./index.html" selected>
+                                Inicio
+                            </option>
+                            <option value="./relatorio.html">
+                                Relatorios
+                            </option>
+                            <option value="./cadastroLancamento.html">
+                                Cadastrar Lançamentos
+                            </option>
+                            <option value="./listaDeLancamentos.html">
+                                Lista de Lançamentos
+                            </option>
+                            <option value="./cadastrarMetas.html">
+                                Cadastrar Metas
+                            </option>
+                            <option value="./cadastrarCategoria.html">
+                                Cadastrar Categoria
+                            </option>
+                            <option value="./cadastrarFornecedores.html">
+                                Cadastrar Fornecedores
+                            </option>
+                          </select>
                     </li>
                 </ul>
             </nav>
@@ -264,4 +279,5 @@
         </ul>
     </footer>
 </body>
+<script src="./select.js"></script>
 </html>

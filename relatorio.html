@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header id="home" class="cabecalho">
         <div id="cabecalhoLogo">
             <h1>Manage Money</h1>
         </div>
@@ -40,29 +40,44 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="./index.html#home" class="linksCabecalho">
+                        <a href="#home" class="linksCabecalho">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="./index.html#sobre" class="linksCabecalho">
+                        <a href="#sobre" class="linksCabecalho">
                             Sobre
                         </a>
                     </li>
                     <li>
-                        <a href="./index.html#contato" class="linksCabecalho">
+                        <a href="#contato" class="linksCabecalho">
                             Contato
                         </a>    
                     </li>
                     <li>
-                        <a href="./relatorio.html" class="linksCabecalho">
-                            Relatorios
-                        </a>    
-                    </li>
-                    <li>
-                        <a href="./metas.html" class="linksCabecalho">
-                            Metas
-                        </a>    
+                        <select class="menuSelecao" onchange="location = this.value;">
+                            <option value="./index.html" selected>
+                                Inicio
+                            </option>
+                            <option value="./relatorio.html">
+                                Relatorios
+                            </option>
+                            <option value="./cadastroLancamento.html">
+                                Cadastrar Lançamentos
+                            </option>
+                            <option value="./listaDeLancamentos.html">
+                                Lista de Lançamentos
+                            </option>
+                            <option value="./cadastrarMetas.html">
+                                Cadastrar Metas
+                            </option>
+                            <option value="./cadastrarCategoria.html">
+                                Cadastrar Categoria
+                            </option>
+                            <option value="./cadastrarFornecedores.html">
+                                Cadastrar Fornecedores
+                            </option>
+                          </select>
                     </li>
                 </ul>
             </nav>
@@ -1376,4 +1391,5 @@
     </section>
 </body>
 <script src="./js/relatorios.js"></script>
+<script src="./select.js"></script>
 </html>

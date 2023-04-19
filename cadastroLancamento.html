@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/cadastroLancamento.css">
+</head>
+<body>
+    <header id="home" class="cabecalho">
+        <div id="cabecalhoLogo">
+            <h1>Manage Money</h1>
+        </div>
+
+        <div id="cabecalhoNav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="linksCabecalho">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="linksCabecalho">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="linksCabecalho">
+                            Contato
+                        </a>    
+                    </li>
+                    <li>
+                        <select class="menuSelecao" onchange="location = this.value;">
+                            <option value="./index.html" selected>
+                                Inicio
+                            </option>
+                            <option value="./relatorio.html">
+                                Relatorios
+                            </option>
+                            <option value="./cadastroLancamento.html">
+                                Cadastrar Lançamentos
+                            </option>
+                            <option value="./listaDeLancamentos.html">
+                                Lista de Lançamentos
+                            </option>
+                            <option value="./cadastrarMetas.html">
+                                Cadastrar Metas
+                            </option>
+                            <option value="./cadastrarCategoria.html">
+                                Cadastrar Categoria
+                            </option>
+                            <option value="./cadastrarFornecedores.html">
+                                Cadastrar Fornecedores
+                            </option>
+                          </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="titulo">Cadastro de Lançamentos</h2>
+            <form>
+                <label id="labelFornecedor" for="fornecedor">Fornecedor:</label>
+                <input type="text" id="fornecedor" name="fornecedor" required>
+              
+                <label id="labelData" for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+              
+                <label id="labelTipo" for="tipo">Tipo de lançamento:</label>
+                <select id="tipo" name="tipo" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="Receita">Receita</option>
+                  <option value="Despesa">Despesa</option>
+                </select>
+              
+                <label id="labelRecorrencia" for="recorrencia">Recorrência / Parcelamento:</label>
+                <input type="text" id="recorrencia" name="recorrencia">
+              
+                <div class="contentCheckBox">
+                  <label id="labelNotificacao" for="notificacao">Notificação:</label>
+                  <input type="checkbox" id="notificacao" name="notificacao">
+                </div>
+            
+                <div class="contentCheckBox">
+                  <label id="labelOculto" for="oculto">Lançamento oculto:</label>
+                  <input type="checkbox" id="oculto" name="oculto">
+                </div>
+              
+                <input type="submit" value="Salvar" id="botaoSalvar">
+              </form>
+        </section>
+    </main>
+</body>
+<script src="./select.js"></script>
+</html>
